@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee Price Predictor</title>
+    <style>
+        body{
+            font-family:"Poppins",sans-serif;
+            background:#f4ebe2;
+            margin:0;
+            padding:0;
+        }
+
+        .container{
+            width:420px;
+            margin:60px auto;
+            background:#ffffff;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.15);
+            border-left:10px solid #7b4b2a;
+        }
+
+        h1{
+            text-align:center;
+            color:#5c3d2e;
+            margin-bottom:15px;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            font-weight:600;
+            color:#5c3d2e;
+        }
+
+        input,select{
+            width:100%;
+            padding:10px;
+            margin-top:6px;
+            border-radius:6px;
+            border:1px solid #c9b9ae;
+            background:#fff8f2;
+            font-size:15px;
+        }
+
+        input:focus,select:focus{
+            outline:none;
+            border:1px solid #7b4b2a;
+        }
+
+        button{
+            width:100%;
+            margin-top:22px;
+            padding:12px;
+            background:#7b4b2a;
+            border:none;
+            color:white;
+            font-size:16px;
+            border-radius:8px;
+            cursor:pointer;
+            transition:0.2s ease;
+        }
+
+        button:hover{
+            background:#5c3d2e;
+        }
+
+        .result{
+            margin-top:25px;
+            padding:15px;
+            background:#d8c3b0;
+            color:#4b2f21;
+            border-radius:8px;
+            text-align:center;
+            font-weight:600;
+        }
+
+        .coffee-icon{
+            width:60px;
+            display:block;
+            margin:0px auto 15px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>☕️Coffee Price Predictor</h1>
+
+        <form method="POST" action="/predict">
+
+            <label>Hours Shop Worked</label>
+            <input type="number" name="hour_of_day" required>
+
+            <label>Time of Day</label>
+            <select name="Time_of_Day" required>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Night</option>
+            </select>
+
+            <label>Day of Week</label>
+            <select name="Weekday" required>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+
+            <label>Month</label>
+            <select name="Month_name" required>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+
+            <label>Coffee Name</label>
+            <select name="coffee_name" required>
+                <option>Americano with Milk</option>
+                <option>Latte</option>
+                <option>Americano</option>
+                <option>Cappuccino</option>
+                <option>Cortado</option>
+                <option>Hot Chocolate</option>
+                <option>Cocoa</option>
+                <option>Espresso</option>
+            </select>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        {% if prediction_text %}
+        <div class="result">
+            {{ prediction_text }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

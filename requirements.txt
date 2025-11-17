@@ -1,0 +1,9 @@
+flask
+gunicorn
+pycaret==3.3.0
+scikit-learn>=1.4.0
+pandas
+numpy
+joblib
+lightgbm
+xgboost
