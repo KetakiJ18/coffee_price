@@ -10,6 +10,7 @@ This project predicts **coffee prices** based on features like:
 A **Random Forest Regression model** is used for prediction, with an accuracy of **97%**.
 The pipeline is fully automated using **PyCaret**, **GitHub Actions**, **Docker**, and **Render**.
 
+Check it out! -> (Coffee Price Prediction)[https://coffee-price-prediction-60ns.onrender.com]
 ---
 
 ## Features
