@@ -15,8 +15,6 @@ def train_and_save_model(csv_path="coffee_sales.csv", model_name="coffee_sales_r
         normalize = True,
         transformation = True,
         transform_target = False,
-        silent=True,
-        verbose=False
     )
 
     best_model = compare_models(sort='MAE')
