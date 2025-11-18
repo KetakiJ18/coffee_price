@@ -7,3 +7,4 @@ pycaret==3.0.4
 lightgbm==4.6.0
 xgboost==3.1.1
 gunicorn==23.0.0
+joblib==1.2.0

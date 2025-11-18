@@ -2947,3 +2947,190 @@ THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
 2025-11-18 10:31:18,199:INFO:Preloading libraries
 2025-11-18 10:31:18,203:INFO:Set up data.
 2025-11-18 10:31:18,211:INFO:Set up index.
+2025-11-18 10:35:57,135:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:35:57,135:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:35:57,135:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:35:57,135:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:35:57,274:INFO:Initializing load_model()
+2025-11-18 10:35:57,275:INFO:load_model(model_name=coffee_sales_rf_model, platform=None, authentication=None, verbose=True)
+2025-11-18 10:35:57,374:INFO:Initializing load_model()
+2025-11-18 10:35:57,374:INFO:load_model(model_name=coffee_sales_rf_model, platform=None, authentication=None, verbose=True)
+2025-11-18 10:36:17,180:INFO:Initializing predict_model()
+2025-11-18 10:36:17,180:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016F5FD709D0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016F5FE6EC20>)
+2025-11-18 10:36:17,180:INFO:Checking exceptions
+2025-11-18 10:36:17,180:INFO:Preloading libraries
+2025-11-18 10:36:17,181:INFO:Set up data.
+2025-11-18 10:36:17,184:INFO:Set up index.
+2025-11-18 10:36:33,357:INFO:Initializing predict_model()
+2025-11-18 10:36:33,358:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016F5FDB07F0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016F5FE6F6D0>)
+2025-11-18 10:36:33,358:INFO:Checking exceptions
+2025-11-18 10:36:33,359:INFO:Preloading libraries
+2025-11-18 10:36:33,359:INFO:Set up data.
+2025-11-18 10:36:33,364:INFO:Set up index.
+2025-11-18 10:36:40,948:INFO:Initializing predict_model()
+2025-11-18 10:36:40,948:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016F5FDB1390>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016F5FE6F6D0>)
+2025-11-18 10:36:40,948:INFO:Checking exceptions
+2025-11-18 10:36:40,949:INFO:Preloading libraries
+2025-11-18 10:36:40,949:INFO:Set up data.
+2025-11-18 10:36:40,952:INFO:Set up index.
+2025-11-18 10:36:45,408:INFO:Initializing predict_model()
+2025-11-18 10:36:45,408:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016F5F8AA590>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016F5FE6F6D0>)
+2025-11-18 10:36:45,408:INFO:Checking exceptions
+2025-11-18 10:36:45,409:INFO:Preloading libraries
+2025-11-18 10:36:45,409:INFO:Set up data.
+2025-11-18 10:36:45,413:INFO:Set up index.
+2025-11-18 10:36:53,411:INFO:Initializing predict_model()
+2025-11-18 10:36:53,411:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016F5DB46F20>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016F5FE6F6D0>)
+2025-11-18 10:36:53,412:INFO:Checking exceptions
+2025-11-18 10:36:53,412:INFO:Preloading libraries
+2025-11-18 10:36:53,412:INFO:Set up data.
+2025-11-18 10:36:53,415:INFO:Set up index.
+2025-11-18 10:37:19,451:INFO:Initializing predict_model()
+2025-11-18 10:37:19,452:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016F5DB46F50>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016F5FE6F6D0>)
+2025-11-18 10:37:19,452:INFO:Checking exceptions
+2025-11-18 10:37:19,452:INFO:Preloading libraries
+2025-11-18 10:37:19,452:INFO:Set up data.
+2025-11-18 10:37:19,456:INFO:Set up index.
+2025-11-18 10:37:28,336:INFO:Initializing predict_model()
+2025-11-18 10:37:28,336:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016F5DB46F80>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016F5FE6F6D0>)
+2025-11-18 10:37:28,336:INFO:Checking exceptions
+2025-11-18 10:37:28,336:INFO:Preloading libraries
+2025-11-18 10:37:28,337:INFO:Set up data.
+2025-11-18 10:37:28,341:INFO:Set up index.

@@ -4,12 +4,16 @@ from flask import Flask, request, jsonify, render_template
 import os
 import warnings
 from pycaret.regression import load_model, predict_model
+from train_model import train_and_save_model
 
 warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
 
-# Load the trained PyCaret model
+CSV_PATH = "coffee_sales.csv"
+MODEL_NAME = "coffee_sales_rf_model"
+MODEL_FILE = MODEL_NAME + ".pkl"
+
 model = load_model("coffee_sales_rf_model")
 
 # Correct column names EXACTLY as trained
@@ -21,6 +25,16 @@ feature_order = [
     "Month_name"
 ]
 
+def check_and_retrain():
+    csv_time = os.path.getmtime(CSV_PATH)
+    model_time = os.path.getmtime(MODEL_FILE) if os.path.exists(MODEL_FILE) else 0
+
+    if csv_time > model_time:
+        print("🔄 CSV updated → Retraining model...")
+        train_and_save_model(CSV_PATH, MODEL_NAME)
+    else:
+        print("📌 Model is already up to date")
+
 def preprocess_input(data_dict):
     """Convert form/JSON input into a pandas DataFrame with correct columns"""
     df = pd.DataFrame([{
@@ -31,6 +45,9 @@ def preprocess_input(data_dict):
         "Month_name": data_dict["Month_name"]
     }])
     return df
+
+check_and_retrain()
+model = load_model(MODEL_NAME)
 
 @app.route("/")
 def home():
@@ -46,13 +63,10 @@ def predict_api():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    # Collect form inputs
     data = {col: request.form[col] for col in feature_order}
 
-    # Preprocess → DataFrame
     df = preprocess_input(data)
 
-    # PyCaret uses predict_model or model.predict
     result = predict_model(model, df)
     output = result["prediction_label"][0]
 
