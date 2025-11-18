@@ -2857,3 +2857,93 @@ THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
 2025-11-17 22:33:34,785:INFO:Preloading libraries
 2025-11-17 22:33:34,785:INFO:Set up data.
 2025-11-17 22:33:34,789:INFO:Set up index.
+2025-11-18 00:37:31,237:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 00:37:31,239:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 00:37:31,239:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 00:37:31,239:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 00:37:31,456:INFO:Initializing load_model()
+2025-11-18 00:37:31,456:INFO:load_model(model_name=coffee_sales_rf_model, platform=None, authentication=None, verbose=True)
+2025-11-18 00:38:25,595:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 00:38:25,595:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 00:38:25,595:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 00:38:25,595:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 00:38:25,741:INFO:Initializing load_model()
+2025-11-18 00:38:25,741:INFO:load_model(model_name=coffee_sales_rf_model, platform=None, authentication=None, verbose=True)
+2025-11-18 00:38:47,297:INFO:Initializing predict_model()
+2025-11-18 00:38:47,297:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002368AEB49A0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002368AF8AC20>)
+2025-11-18 00:38:47,297:INFO:Checking exceptions
+2025-11-18 00:38:47,297:INFO:Preloading libraries
+2025-11-18 00:38:47,301:INFO:Set up data.
+2025-11-18 00:38:47,309:INFO:Set up index.
+2025-11-18 10:27:09,347:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:27:09,348:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:27:09,348:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:27:09,348:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:27:09,531:INFO:Initializing load_model()
+2025-11-18 10:27:09,531:INFO:load_model(model_name=coffee_sales_rf_model, platform=None, authentication=None, verbose=True)
+2025-11-18 10:31:02,157:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:31:02,157:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:31:02,157:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:31:02,157:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-18 10:31:02,296:INFO:Initializing load_model()
+2025-11-18 10:31:02,296:INFO:load_model(model_name=coffee_sales_rf_model, platform=None, authentication=None, verbose=True)
+2025-11-18 10:31:18,199:INFO:Initializing predict_model()
+2025-11-18 10:31:18,199:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023622F24B50>, estimator=Pipeline(memory=FastMemory(location=C:\Users\ketak\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['hour_of_day'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['coffee_name', 'Time_of_Day',
+                                             'Weekday', 'Month_name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encod...
+                                    transformer=OneHotEncoder(cols=['coffee_name',
+                                                                    'Time_of_Day',
+                                                                    'Weekday',
+                                                                    'Month_name'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023622FDAC20>)
+2025-11-18 10:31:18,199:INFO:Checking exceptions
+2025-11-18 10:31:18,199:INFO:Preloading libraries
+2025-11-18 10:31:18,203:INFO:Set up data.
+2025-11-18 10:31:18,211:INFO:Set up index.
