@@ -36,3 +36,7 @@ jobs:
           git add coffee_sales_rf_model.pkl
           git commit -m "Auto-retrained model from GitHub Actions" || echo "No changes to commit"
           git push origin main
+      - name: Deploy to Render
+        run: curl -X POST "$RENDER_DEPLOY_HOOK"
+        env:
+          RENDER_DEPLOY_HOOK: https://api.render.com/deploy/srv-d4e0hp7gi27c73cbtjeg?key=DM9PxK_dq-k
