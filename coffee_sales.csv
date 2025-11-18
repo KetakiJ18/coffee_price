@@ -3546,3 +3546,4 @@ hour_of_day,money,coffee_name,Time_of_Day,Weekday,Month_name
 14,35.76,Cocoa,Afternoon,Sun,Mar
 15,25.96,Americano,Afternoon,Sun,Mar
 18,35.76,Latte,Night,Sun,Mar
+18,30,Cappuccino,Night,Sun,Nov
