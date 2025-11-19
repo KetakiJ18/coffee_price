@@ -1,4 +1,4 @@
-# ☕ Coffee Price Prediction — ML + PyCaret + CI/CD + Docker + Render
+# ☕ Coffee Price Prediction
 
 This project predicts **coffee prices** based on features like:
 * `hour_of_day`
@@ -12,7 +12,7 @@ The pipeline is fully automated using **PyCaret**, **GitHub Actions**, **Docker*
 
 ---
 
-[Coffee Price Prediction](https://coffee-price-prediction-60ns.onrender.com)
+Check it out! [Coffee Price Prediction](https://coffee-price-prediction-60ns.onrender.com)
 
 ## Features
 ### Machine Learning (PyCaret)
@@ -39,7 +39,6 @@ The pipeline is fully automated using **PyCaret**, **GitHub Actions**, **Docker*
 ---
 
 ## Project Structure
-
 ```
 .
 ├── app.py                      # Flask backend
@@ -93,7 +92,7 @@ docker run -p 5000:5000 coffee-price-app
 ---
 
 ## Environment Requirements
-* Python 3.10+
+* Python 3.9-3.11
 * PyCaret (Regression)
 * Flask
 * scikit-learn
@@ -105,6 +104,4 @@ docker run -p 5000:5000 coffee-price-app
 
 ## Web UI Preview
 
-(Simple HTML/CSS interface for end users)
-
-
+<img width="1280" height="894" alt="image" src="https://github.com/user-attachments/assets/53afd9ca-cc40-4668-92b3-e0d92b8db887" />
