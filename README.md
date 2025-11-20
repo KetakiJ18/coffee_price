@@ -1,4 +1,4 @@
-# ☕ Coffee Price Prediction
+# ☕ Coffee Price Prediction 
 
 This project predicts **coffee prices** based on features like:
 * `hour_of_day`
